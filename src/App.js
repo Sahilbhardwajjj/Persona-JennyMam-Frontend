@@ -15,7 +15,7 @@ function App() {
   const [isTyping, setIsTyping] = useState(false);
   const [personaName] = useState("Jayanti Khatri Lamba (Jenny Mam)");
   const [personaRole] = useState("Youtuber - Simplifying CS, Happy Learning!");
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
