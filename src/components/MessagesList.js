@@ -32,15 +32,16 @@ function MessagesList({ messages, isTyping, darkMode }) {
                 darkMode ? "text-white" : "text-slate-800"
               }`}
             >
-              Coding Questions Only
+              Hey everyone!
             </h3>
             <p
               className={`text-sm max-w-xs ${
                 darkMode ? "text-slate-400" : "text-slate-500"
               }`}
             >
-              Ask me anything about programming, web development, algorithms,
-              debugging, and more!
+              Don't let complex code confuse you. I'm here to break down
+              programming—from basics to advanced algorithms—into simple,
+              easy-to-understand steps. What should we simplify today?
             </p>
           </div>
           {/* Suggested Topics */}
