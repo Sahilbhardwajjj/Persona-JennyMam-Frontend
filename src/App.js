@@ -63,13 +63,16 @@ function App() {
   };
 
   const generateResponse = async (userMessage) => {
-    const response = await fetch("http://localhost:5001/api/chat", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    const response = await fetch(
+      "https://persona-jenny-mam-backend.vercel.app/api/chat",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: userMessage }),
       },
-      body: JSON.stringify({ message: userMessage }),
-    });
+    );
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
